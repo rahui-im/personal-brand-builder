@@ -1,8 +1,18 @@
-# Personal Brand Builder
+# 🎨 Personal Brand Builder - 희희락락
 
-**퍼스널 브랜딩 랜딩페이지 빌더**
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-15.4.5-black?style=for-the-badge&logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+</div>
 
-드래그 앤 드롭으로 누구나 쉽게 만들 수 있는 퍼스널 브랜딩 랜딩페이지 빌더입니다.
+<div align="center">
+  <h3>🚀 드래그 앤 드롭으로 만드는 퍼스널 브랜딩 웹사이트</h3>
+  <p>코딩 없이 • 반응형 디자인 • 한국형 테마 "희희락락"</p>
+</div>
+
+---
 
 ## 🚀 주요 기능
 
