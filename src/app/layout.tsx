@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeInitializer } from "@/components/ThemeInitializer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Personal Brand Builder",
-  description: "Create stunning personal brand websites with our drag-and-drop builder",
+  title: "희희락락 - 개인 브랜드 빌더",
+  description: "드래그 앤 드롭으로 멋진 개인 브랜드 웹사이트를 만들어보세요",
 };
 
 export default function RootLayout({
@@ -24,10 +13,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="ko">
+      <head>
+        <link
+          rel="stylesheet"
+          as="style"
+          crossOrigin=""
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+        />
+      </head>
+      <body className="antialiased">
         <ThemeInitializer />
         {children}
       </body>
