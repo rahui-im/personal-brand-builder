@@ -145,8 +145,8 @@ export default function Home() {
       {/* Features Section - Horizontal Scroll */}
       <section className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
-          <div className="overflow-x-auto pb-4">
-            <div className="flex space-x-6 min-w-max">
+          <div className="flex justify-center overflow-x-auto pb-4">
+            <div className="flex space-x-6">
               {/* 찐코딩 */}
               <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-56 flex-shrink-0">
                 <CardHeader className="p-6">
