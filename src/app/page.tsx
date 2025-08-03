@@ -35,17 +35,29 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F7F0B5]">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-8">
+      <header className="bg-white sticky top-0 z-50">
+        {/* Top Bar */}
+        <div className="border-b border-gray-200">
+          <div className="container mx-auto px-4 h-12 flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <Button variant="ghost" className="text-2xl font-bold text-gray-800 hover:bg-transparent px-0">
+              <Button variant="ghost" className="text-xl font-bold text-gray-800 hover:bg-transparent px-0">
                 희희락락
               </Button>
-              <span className="text-sm text-gray-600">기쁘고 즐거운 일만</span>
+              <span className="text-xs text-gray-600">기쁘고 즐거운 일만</span>
             </Link>
             
-            <div className="hidden md:flex items-center space-x-6">
+            <div className="flex items-center space-x-3">
+              <Link href="/login" className="text-sm text-gray-600 hover:text-gray-800">
+                로그인 / 회원가입
+              </Link>
+            </div>
+          </div>
+        </div>
+        
+        {/* Main Navigation */}
+        <nav className="border-b border-gray-200">
+          <div className="container mx-auto px-4 h-12 flex items-center justify-between">
+            <div className="flex items-center space-x-6">
               <button className="flex items-center text-[#3C828F] hover:text-[#84C46E] transition-colors font-medium">
                 <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -53,7 +65,7 @@ export default function Home() {
                 전체메뉴
               </button>
               <Link href="/jingoding" className="text-[#3C828F] hover:text-[#84C46E] transition-colors font-medium">
-                찐코딩 소개
+                소개
               </Link>
               <Link href="/online" className="text-[#3C828F] hover:text-[#84C46E] transition-colors font-medium">
                 온라인 강의
@@ -64,63 +76,71 @@ export default function Home() {
               <Link href="/blog" className="text-[#3C828F] hover:text-[#84C46E] transition-colors font-medium">
                 블로그
               </Link>
-            </div>
-          </div>
-
-          <div className="flex items-center space-x-6">
-            <div className="hidden lg:flex items-center space-x-4 text-sm">
-              <Link href="/business" className="text-gray-600 hover:text-gray-800">기업문의</Link>
-              <Link href="/brand" className="text-gray-600 hover:text-gray-800">세소식</Link>
-              <Link href="/news" className="text-gray-600 hover:text-gray-800">뉴스레터</Link>
-              <Link href="/youtube" className="text-gray-600 hover:text-gray-800 flex items-center">
-                <svg className="w-4 h-4 mr-1 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+              <Link href="/youtube" className="text-[#3C828F] hover:text-[#84C46E] transition-colors font-medium flex items-center">
+                <svg className="w-5 h-5 mr-1 text-red-600" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
-                찐코딩
+                YouTube
               </Link>
             </div>
             
-            <div className="flex items-center space-x-3">
-              <Link href="/login" className="text-sm text-gray-600 hover:text-gray-800">
-                로그인 / 회원가입
-              </Link>
+            <div className="hidden lg:flex items-center space-x-4 text-sm">
+              <Link href="/business" className="text-gray-600 hover:text-gray-800">문의</Link>
+              <Link href="/brand" className="text-gray-600 hover:text-gray-800">새소식</Link>
+              <Link href="/news" className="text-gray-600 hover:text-gray-800">뉴스레터</Link>
             </div>
           </div>
         </nav>
       </header>
 
-      {/* Hero Section */}
-      <section className="bg-[#C0E8E6] py-20">
+      {/* Hero Section - Banner Slider */}
+      <section className="bg-[#283B66] py-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            
-            <h1 className="text-5xl md:text-6xl font-bold text-[#3C828F] mb-6 tracking-tight">
-              나만의 개인 브랜드를
-              <br />
-              <span className="text-[#84C46E]">쉽고 빠르게</span> 만들어보세요
-            </h1>
-            
-            <p className="text-xl text-[#3C828F] mb-10 leading-relaxed">
-              코딩 없이 드래그 앤 드롭으로 전문적인 웹사이트를 만들 수 있습니다.
-              <br />
-              지금 바로 시작하고 5분 안에 당신의 브랜드를 온라인에 공개하세요.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-[#84C46E] hover:bg-[#79A991] text-white text-lg px-8 py-6" asChild>
-                <Link href="/builder">
-                  무료로 시작하기
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" className="border-[#3C828F] text-[#3C828F] hover:bg-[#3C828F] hover:text-white text-lg px-8 py-6" asChild>
-                <Link href="/demo">데모 보기</Link>
-              </Button>
+          <div className="bg-[#283B66] rounded-lg overflow-hidden">
+            <div className="flex items-center">
+              {/* Left Content */}
+              <div className="w-1/2 p-12 text-white">
+                <h2 className="text-4xl font-bold mb-4">
+                  생성형 AI 활용 강의
+                </h2>
+                <p className="text-lg mb-6 leading-relaxed">
+                  찐코딩의 생성형 AI 활용 강의로<br />
+                  번복 업무는 AI에 맡기고 나의 능력 개발에만 집중하세요.<br />
+                  입무 성과는 높아지고 야근은 없어집니다.
+                </p>
+                
+                {/* Slider Navigation */}
+                <div className="flex items-center space-x-4">
+                  <button className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              
+              {/* Right Image */}
+              <div className="w-1/2 relative">
+                <div className="bg-gradient-to-l from-[#283B66] to-transparent absolute inset-y-0 left-0 w-20 z-10"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop" 
+                  alt="AI Express" 
+                  className="w-full h-[400px] object-cover"
+                />
+                <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded">
+                  1 / 3
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
       </section>
+      
 
       {/* Features Grid */}
       <section className="py-20 bg-[#F7F0B5]">
