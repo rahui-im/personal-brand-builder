@@ -289,33 +289,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-[#F7F0B5]">
-        <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-[#84C46E] to-[#6BBCB3] rounded-2xl p-12 text-center text-white">
-            <h2 className="text-4xl font-bold mb-4">
-              지금 시작할 준비가 되셨나요?
-            </h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              5분 안에 당신만의 개인 브랜드 웹사이트를 만들어보세요.
-              <br />
-              신용카드 없이 무료로 시작할 수 있습니다.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-[#84C46E] hover:bg-gray-100 text-lg px-8 py-6" asChild>
-                <Link href="/builder">
-                  무료로 시작하기
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" className="text-white border-white/30 hover:bg-white/10 text-lg px-8 py-6" asChild>
-                <Link href="/templates">템플릿 둘러보기</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-[#3C828F] text-white py-12">
         <div className="container mx-auto px-4">
