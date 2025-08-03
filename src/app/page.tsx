@@ -157,7 +157,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <CardTitle className="text-lg text-[#3C828F] mb-0">찐코딩</CardTitle>
+                      <CardTitle className="text-lg text-[#3C828F] mb-0">소개</CardTitle>
                     </div>
                   </div>
                   <CardDescription className="text-[#79A991] text-sm leading-relaxed">
@@ -176,7 +176,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <CardTitle className="text-lg text-[#3C828F] mb-0">기업강의</CardTitle>
+                      <CardTitle className="text-lg text-[#3C828F] mb-0">온라인 강의</CardTitle>
                     </div>
                   </div>
                   <CardDescription className="text-[#79A991] text-sm leading-relaxed">
@@ -193,7 +193,7 @@ export default function Home() {
                       <Code className="w-6 h-6 text-[#3C828F]" />
                     </div>
                     <div>
-                      <CardTitle className="text-lg text-[#3C828F] mb-0">온라인 강의</CardTitle>
+                      <CardTitle className="text-lg text-[#3C828F] mb-0">전자책</CardTitle>
                     </div>
                   </div>
                   <CardDescription className="text-[#79A991] text-sm leading-relaxed">
@@ -210,7 +210,7 @@ export default function Home() {
                       <Globe className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <CardTitle className="text-lg text-[#3C828F] mb-0">자동화 시나리오</CardTitle>
+                      <CardTitle className="text-lg text-[#3C828F] mb-0">블로그</CardTitle>
                     </div>
                   </div>
                   <CardDescription className="text-[#79A991] text-sm leading-relaxed">
@@ -228,7 +228,7 @@ export default function Home() {
                     </div>
                     <div>
                       <CardTitle className="text-lg text-[#3C828F] mb-0">
-                        전자책
+                        YouTube
                         <span className="ml-2 text-xs bg-[#84C46E] text-white px-2 py-1 rounded">기간할인</span>
                       </CardTitle>
                     </div>
