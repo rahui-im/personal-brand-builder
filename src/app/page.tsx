@@ -202,22 +202,24 @@ export default function Home() {
                 </CardHeader>
               </Card>
 
-              {/* 자동화 시나리오 */}
-              <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-56 flex-shrink-0">
-                <CardHeader className="p-6">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-[#84C46E] rounded-xl flex items-center justify-center mr-3">
-                      <Globe className="w-6 h-6 text-white" />
+              {/* 블로그 */}
+              <Link href="/blog">
+                <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-56 flex-shrink-0 cursor-pointer">
+                  <CardHeader className="p-6">
+                    <div className="flex items-center mb-3">
+                      <div className="w-12 h-12 bg-[#84C46E] rounded-xl flex items-center justify-center mr-3">
+                        <Globe className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <CardTitle className="text-lg text-[#3C828F] mb-0">블로그</CardTitle>
+                      </div>
                     </div>
-                    <div>
-                      <CardTitle className="text-lg text-[#3C828F] mb-0">블로그</CardTitle>
-                    </div>
-                  </div>
-                  <CardDescription className="text-[#79A991] text-sm leading-relaxed">
-                    반복되는 업무는 알아서! AI에게 맡기고, 더 가치 있는 일에 집중하세요.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+                    <CardDescription className="text-[#79A991] text-sm leading-relaxed">
+                      AI 활용 팁과 기업 강의 후기, 최신 트렌드를 공유합니다.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
 
               {/* 전자책 */}
               <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-56 flex-shrink-0">
