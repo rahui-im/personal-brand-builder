@@ -94,9 +94,9 @@ export default function Home() {
       </header>
 
       {/* Hero Section - Banner Slider */}
-      <section className="bg-[#283B66] py-12">
+      <section className="bg-[#3C828F] py-12">
         <div className="container mx-auto px-4">
-          <div className="bg-[#283B66] rounded-lg overflow-hidden">
+          <div className="bg-[#3C828F] rounded-lg overflow-hidden">
             <div className="flex items-center">
               {/* Left Content */}
               <div className="w-1/2 p-12 text-white">
@@ -126,7 +126,7 @@ export default function Home() {
               
               {/* Right Image */}
               <div className="w-1/2 relative">
-                <div className="bg-gradient-to-l from-[#283B66] to-transparent absolute inset-y-0 left-0 w-20 z-10"></div>
+                <div className="bg-gradient-to-l from-[#3C828F] to-transparent absolute inset-y-0 left-0 w-20 z-10"></div>
                 <img 
                   src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop" 
                   alt="AI Express" 
@@ -142,90 +142,103 @@ export default function Home() {
       </section>
       
 
-      {/* Features Grid */}
-      <section className="py-20 bg-[#F7F0B5]">
+      {/* Features Section - Horizontal Scroll */}
+      <section className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#3C828F] mb-4">
-              왜 희희락락을 선택해야 할까요?
-            </h2>
-            <p className="text-lg text-[#3C828F] max-w-2xl mx-auto">
-              개인 브랜드 웹사이트를 만드는 가장 쉽고 빠른 방법
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-white hover:shadow-xl transition-all duration-300 border-0 shadow-md">
-              <CardHeader className="p-6">
-                <div className="w-14 h-14 bg-[#C0E8E6] rounded-xl flex items-center justify-center mb-4">
-                  <Zap className="w-7 h-7 text-[#84C46E]" />
-                </div>
-                <CardTitle className="text-xl text-[#3C828F]">빛처럼 빠른 제작</CardTitle>
-                <CardDescription className="text-[#79A991] mt-2">
-                  템플릿을 선택하고 내용을 수정하면 5분 안에 웹사이트가 완성됩니다
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="bg-white hover:shadow-xl transition-all duration-300 border-0 shadow-md">
-              <CardHeader className="p-6">
-                <div className="w-14 h-14 bg-[#EEEAA2] rounded-xl flex items-center justify-center mb-4">
-                  <Code className="w-7 h-7 text-[#3C828F]" />
-                </div>
-                <CardTitle className="text-xl text-[#3C828F]">코딩 없이 제작</CardTitle>
-                <CardDescription className="text-[#79A991] mt-2">
-                  드래그 앤 드롭으로 누구나 쉽게 전문적인 웹사이트를 만들 수 있습니다
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="bg-white hover:shadow-xl transition-all duration-300 border-0 shadow-md">
-              <CardHeader className="p-6">
-                <div className="w-14 h-14 bg-[#C0E8E6] rounded-xl flex items-center justify-center mb-4">
-                  <Palette className="w-7 h-7 text-[#84C46E]" />
-                </div>
-                <CardTitle className="text-xl text-[#3C828F]">아름다운 디자인</CardTitle>
-                <CardDescription className="text-[#79A991] mt-2">
-                  전문 디자이너가 만든 50개 이상의 템플릿으로 시작하세요
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="bg-white hover:shadow-xl transition-all duration-300 border-0 shadow-md">
-              <CardHeader className="p-6">
-                <div className="w-14 h-14 bg-[#EEEAA2] rounded-xl flex items-center justify-center mb-4">
-                  <Globe className="w-7 h-7 text-[#3C828F]" />
-                </div>
-                <CardTitle className="text-xl text-[#3C828F]">즉시 배포</CardTitle>
-                <CardDescription className="text-[#79A991] mt-2">
-                  버튼 하나로 전 세계에 당신의 웹사이트를 공개할 수 있습니다
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="bg-white hover:shadow-xl transition-all duration-300 border-0 shadow-md">
-              <CardHeader className="p-6">
-                <div className="w-14 h-14 bg-[#C0E8E6] rounded-xl flex items-center justify-center mb-4">
-                  <Shield className="w-7 h-7 text-[#84C46E]" />
-                </div>
-                <CardTitle className="text-xl text-[#3C828F]">보안 & SEO</CardTitle>
-                <CardDescription className="text-[#79A991] mt-2">
-                  SSL 인증서와 SEO 최적화로 안전하고 검색 가능한 웹사이트
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="bg-white hover:shadow-xl transition-all duration-300 border-0 shadow-md">
-              <CardHeader className="p-6">
-                <div className="w-14 h-14 bg-[#EEEAA2] rounded-xl flex items-center justify-center mb-4">
-                  <Users className="w-7 h-7 text-[#3C828F]" />
-                </div>
-                <CardTitle className="text-xl text-[#3C828F]">24/7 지원</CardTitle>
-                <CardDescription className="text-[#79A991] mt-2">
-                  언제든지 도움이 필요하면 전문가 팀이 지원해드립니다
-                </CardDescription>
-              </CardHeader>
-            </Card>
+          <div className="overflow-x-auto pb-4">
+            <div className="flex space-x-6 min-w-max">
+              {/* 찐코딩 */}
+              <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-56 flex-shrink-0">
+                <CardHeader className="p-6">
+                  <div className="flex items-center mb-3">
+                    <div className="w-12 h-12 bg-[#84C46E] rounded-xl flex items-center justify-center mr-3">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <CardTitle className="text-lg text-[#3C828F] mb-0">찐코딩</CardTitle>
+                    </div>
+                  </div>
+                  <CardDescription className="text-[#79A991] text-sm leading-relaxed">
+                    누구나 쉽고 재밌게 인공 지능의 도움을 받을 수 있는 세상을 꿈꿉니다.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* 기업강의 */}
+              <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-40 flex-shrink-0">
+                <CardHeader className="p-4">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-[#C0E8E6] rounded-xl flex items-center justify-center mr-2">
+                      <svg className="w-5 h-5 text-[#3C828F]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <CardTitle className="text-base text-[#3C828F] mb-0">기업강의</CardTitle>
+                    </div>
+                  </div>
+                  <CardDescription className="text-[#79A991] text-xs leading-relaxed">
+                    임직원들의 AI 역량 강화를 통해 업무 생산성과 조직 경쟁력을 높여드립니다.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* 온라인 강의 */}
+              <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-40 flex-shrink-0">
+                <CardHeader className="p-4">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-[#EEEAA2] rounded-xl flex items-center justify-center mr-2">
+                      <Code className="w-5 h-5 text-[#3C828F]" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-base text-[#3C828F] mb-0">온라인 강의</CardTitle>
+                    </div>
+                  </div>
+                  <CardDescription className="text-[#79A991] text-xs leading-relaxed">
+                    시간과 장소의 제약 없이, 나만의 속도로 찐코딩 AI 활용법을 배워보세요.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* 자동화 시나리오 */}
+              <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-40 flex-shrink-0">
+                <CardHeader className="p-4">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-[#84C46E] rounded-xl flex items-center justify-center mr-2">
+                      <Globe className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-base text-[#3C828F] mb-0">자동화 시나리오</CardTitle>
+                    </div>
+                  </div>
+                  <CardDescription className="text-[#79A991] text-xs leading-relaxed">
+                    반복되는 업무는 알아서! AI에게 맡기고, 더 가치 있는 일에 집중하세요.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* 전자책 */}
+              <Card className="bg-white hover:shadow-lg transition-all duration-300 border-0 shadow-sm w-40 flex-shrink-0">
+                <CardHeader className="p-4">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-[#A989BB] rounded-xl flex items-center justify-center mr-2">
+                      <BarChart className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-base text-[#3C828F] mb-0">
+                        전자책
+                        <span className="ml-1 text-[10px] bg-[#84C46E] text-white px-1.5 py-0.5 rounded">기간할인</span>
+                      </CardTitle>
+                    </div>
+                  </div>
+                  <CardDescription className="text-[#79A991] text-xs leading-relaxed">
+                    AI의 핵심 개념부터 실전 활용까지, 체계적으로 정리된 가이드북입니다.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
