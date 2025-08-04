@@ -250,7 +250,7 @@ export const BlogBlock: React.FC<{ props?: Partial<BlogProps> }> = ({ props = {}
         {/* 모든 포스트 보기 버튼 */}
         <motion.div className="text-center mt-8" {...animationProps}>
           <Button variant="outline" asChild>
-            <a href="/blog">
+            <a href="https://heherockrock.blogspot.com" target="_blank" rel="noopener noreferrer">
               View All Posts
             </a>
           </Button>

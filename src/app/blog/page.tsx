@@ -204,7 +204,7 @@ export default function BlogPage() {
               <Link href="/qna" className="text-[#3C828F] hover:text-[#84C46E] transition-colors font-medium">
                 전자책
               </Link>
-              <Link href="/blog" className="text-[#84C46E] font-medium">
+              <Link href="https://heherockrock.blogspot.com" className="text-[#84C46E] font-medium" target="_blank" rel="noopener noreferrer">
                 블로그
               </Link>
               <Link href="/youtube" className="text-[#3C828F] hover:text-[#84C46E] transition-colors font-medium flex items-center">
@@ -383,7 +383,7 @@ export default function BlogPage() {
               <h3 className="font-semibold mb-4">회사</h3>
               <ul className="space-y-2 text-gray-300">
                 <li><Link href="/about" className="hover:text-white transition-colors">회사소개</Link></li>
-                <li><Link href="/blog" className="hover:text-white transition-colors">블로그</Link></li>
+                <li><Link href="https://heherockrock.blogspot.com" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">블로그</Link></li>
                 <li><Link href="/careers" className="hover:text-white transition-colors">채용</Link></li>
                 <li><Link href="/privacy" className="hover:text-white transition-colors">개인정보처리방침</Link></li>
               </ul>
